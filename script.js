@@ -95,8 +95,15 @@ let chuVaki = [
 
 
 
-function findName(arr) {
-    return arr.map(item => item.name)
+// function findName(arr) {
+//     return arr.map(item => item.name)
+// }
+
+// console.log(findName(chuVaki))
+
+
+function colorYey(color) {
+    return chuVaki.filter(elem => elem.eyeColor === color)
 }
 
-console.log(findName(chuVaki))
+console.log(colorYey('blue'))
