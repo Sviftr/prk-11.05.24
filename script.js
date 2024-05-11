@@ -102,8 +102,19 @@ let chuVaki = [
 // console.log(findName(chuVaki))
 
 
-function colorYey(color) {
-    return chuVaki.filter(elem => elem.eyeColor === color)
+// function colorYey(color) {
+//     return chuVaki.filter(elem => elem.eyeColor === color)
+// }
+
+// console.log(colorYey('blue'))
+
+
+
+function gender(gender) {
+    let genderk = chuVaki.filter(item => item.gender === gender)
+    return genderk.map(user => user.name)
 }
 
-console.log(colorYey('blue'))
+console.log(gender('male'))
+
+
